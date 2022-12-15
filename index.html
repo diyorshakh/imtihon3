@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+
+<body>
+    <h1>Imtihon 3-oy</h1>
+    <button onclick="changetheme()" class="theme">Mavzuni o'zgartirish</button>
+
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Topshiriq #1
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                    <form action="" id="form">
+                        Lavozimingizni kiriting:
+                        <input type="text" id="lavozim">
+                        <button id="lavozim_btn">Tasdiqlash</button>
+                    </form>
+                    <p id="lavozimga_javob"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    Topshiriq #2
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <input type="date" id="d1">
+                    <input type="date" id="d2">
+                    <button onclick="calculateDays()">Farqni topish</button>
+                    <p id="output"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingthree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapsethree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapsethree">
+                    Topshiriq #3
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapsethree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingthree">
+                <div class="accordion-body">
+                    99 gacha son kiriting
+                    <input type="number" id="input_number">
+                    <p id="result"></p>
+                    <button id="btn_solve" onclick="noname()">tekshirish</button>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapsefour">
+                    Topshiriq #4
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingfour">
+                <div class="accordion-body">
+                    Berilgan <code>[3, 5, 22, 5, 7, 2, 45, 75]</code> massivning elementlari yig'indisini har bir
+                    elementini 3 qo'shilgan holatda hisoblang va ekranga chiqaring.
+                    <br>
+                    <p>Natija: <code id="qiymat"></code></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingfivepanelsStayOpen-collapsefive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapsefive">
+                    Topshiriq #5
+                </button>
+            </h2>
+            <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingfive">
+                <div class="accordion-body">
+                    Berilgan <code> [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];</code> va
+                    <code>[4, 2, 21, 12, 13, 34, 46, 79, 10, 21, 34];</code> massivlarning mos
+                    elementlari yig'indisini hisoblaydigan funksiya yozing.
+                    <p>Natija: <code id="solve--array"></code></p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingfivepanelsStayOpen-collapsesix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapsesix">
+                        Topshiriq #6
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingsix">
+                    <div class="accordion-body">
+                        <form action="">
+                            <h1>So'z yozip ko'ring</h1>
+                            <input id="text" style="text-transform: uppercase" type="text" autocomplete="off" />
+                        </form>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingfivepanelsStayOpen-collapseseven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseseven" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseseven">
+                            Topshiriq #7
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseseven" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingseven">
+                        <div class="accordion-body">
+                            <form class="form_ism">
+                                <label for="name_input">Ism: </label>
+                                <input required maxlength="32" minlength="3" id="firs-name" type="text">
+
+                                <label class="mt-3" for="Age">Yosh:</label>
+                                <input required max="150" min="0" type="number">
+                                <button type="submit">Tasdiqlash</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingfivepanelsStayOpen-collapseeight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseeight" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseeight">
+                            Topshiriq #8
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseeight" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingeight">
+                        <div class="accordion-body">
+                            Berilgan <span id="reset_massiv"></span>massividan inputga kiritilganini
+                            o'chirib ,qolganini
+                            ekranga chiqaradigan funksiya yozing.
+                            <form action="">
+                                Berilgan <code>[23, 56, 4, 78, 5, 63, 45, 210, 56]</code> <span id="mass" class=" text-danger"></span>massividan inputga kiritilganini
+                                o'chirib ,qolganini
+                                ekranga chiqaradigan funksiya yozing.
+                                <form action="">
+                                    <input type="number" id="massive_status">
+                                    <button id="rebok">o'chirish</button>
+                                    <p id="alpha_massive"></p>
+                                </form>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingfivepanelsStayOpen-collapsenine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapsenine" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapsenine">
+                            Topshiriq #9
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapsenine" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingnine">
+                        <div class="accordion-body">
+                            <form action="">
+                                Inputga kiritilgan so'zlarni ketma-ket chiqaradigan funskiya
+                                <input type="text" id="names">
+                                <p id="all"></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <script src="./js/bootstrap.js"></script>
+            <script src="./js/theme.js"></script>
+            <script src="./js/index_1.js"></script>
+            <script src="./js/index_2.js"></script>
+            <script src="./js/index_3.js"></script>
+            <script src="./js/index_4.js"></script>
+            <script src="./js/index_5.js"></script>
+            <script src="./js/index_6.js"></script>
+            <script src="./js/index_7.js"></script>
+            <script src="./js/index_8.js"></script>
+            <script src="./js/index_9.js"></script>
+</body>
+
+</html>
